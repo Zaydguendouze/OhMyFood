@@ -153,6 +153,12 @@ header {
                     position: relative;
                     box-shadow: .25rem .25rem .5rem #00000022;
 
+                    &:hover {
+                            opacity: 0.8;
+                            background-color: rgb(246, 200, 248);
+                            transition: all 1s;
+                    }
+
                     i {
                         margin-right: 1rem;
                         color: #7e7e7e;

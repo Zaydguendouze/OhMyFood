@@ -121,6 +121,11 @@ header .logo {
   position: relative;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.1333333333);
 }
+.content .function .container ul li:hover {
+  opacity: 0.8;
+  background-color: rgb(246, 200, 248);
+  transition: all 1s;
+}
 .content .function .container ul li i {
   margin-right: 1rem;
   color: #7e7e7e;
