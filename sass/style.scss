@@ -188,8 +188,10 @@ header {
         }
     }
 
-    .restaurants {background: #f6f6f6;
-        @include padding-page();
+    .restaurants 
+    
+        {background: #f6f6f6;
+        @include padding-page;
     
         .container {
     
