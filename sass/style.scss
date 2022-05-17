@@ -181,5 +181,84 @@ header {
             }
         }
     }
+
+    .restaurants {background: #f6f6f6;
+        @include padding-page();
+    
+        .container {
+    
+            .cards {
+                display: flex;
+                flex-direction: column;
+    
+                .card {
+                    background: #fff;
+                    border-radius: 1rem;
+                    position: relative;
+                    display: block;
+                    margin: 0.5rem;
+                    box-shadow: .25rem .25rem .5rem #00000012;
+    
+                    img {
+                        width: 100%;
+                        height: 14rem;
+                        border-radius: 1rem 1rem 0 0;
+                        object-fit: cover;
+                    }
+    
+                    .card__new {
+                        background: #99e1cf;
+                        color: #138668;
+                        padding: .3rem;
+                        position: absolute;
+                        top: 1rem;
+                        right: .75rem;
+                    }
+    
+                    .card__info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 0 1rem;
+                        color: black;
+                        padding: 1rem;
+    
+                        h3 {
+                            margin: 0 0 .25rem;
+                        }
+    
+                        .card__heart {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+    
+                            i {
+                                font-size: 2em;
+                                position: absolute;
+    
+                                &:hover {
+                                    opacity: 0;
+                                }
+                            }
+    
+                            .heart__color {
+                                opacity: 0;
+    
+                                &:hover {
+                                    opacity: 1;
+                                    background: linear-gradient(0deg, $primary, $secondary);
+                                    transition: all 1s;
+                                    background-clip: text;
+                                    -webkit-background-clip: text;
+                                    color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
