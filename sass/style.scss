@@ -80,6 +80,10 @@ body {
     }
 }
 
+.container {
+    margin: auto;
+}
+
 header {
     padding: 1rem;
     box-shadow: 0px 2px 5px #27262666;
@@ -301,5 +305,35 @@ footer {
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+
+    .function {
+        .container {
+            width: 75%;
+
+            ul {
+                display: flex;
+
+                li {
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+    .restaurants {
+        .container {
+            width: 75%;
+
+            .cards {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 2rem;
+            }
+        }
+    }
+
 }
 
