@@ -270,3 +270,36 @@ header {
     }
 }
 
+footer {
+    padding: 1rem;
+    background: #383838;
+    display: flex;
+    flex-direction: column;
+
+    .footer__text {
+        font-family: 'Shrikhand';
+        font-size: 1.5rem;
+        margin: 0 0 1rem;
+        color: #fff;
+    }
+
+    ul {
+        list-style: none;
+        margin-bottom: 1rem;
+
+        li {
+            margin: .5rem 0;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    width: 1.2rem;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
