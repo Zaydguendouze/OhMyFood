@@ -9,5 +9,13 @@
   },
   "author": "Zayd",
   "license": "ISC",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaydguendouze/OhMyFood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zaydguendouze/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/Zaydguendouze/OhMyFood#readme"
 }
