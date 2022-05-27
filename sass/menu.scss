@@ -64,12 +64,28 @@ a {
 
                 &:hover {
                     opacity: 1;
-                    background: linear-gradient(0deg, $primary, $secondary);
+                    background: linear-gradient($primary, $secondary);
                     transition: all 1s;
                     background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;
                 }
+            }
+        }
+    }
+
+    .btn__cards {
+        padding: 3rem 0;
+        display: flex;
+        justify-content: center;
+
+        .btn__buy {
+            @include btn;
+            font-weight: 400;
+
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 0.25rem 0.25rem 10px #000000c9;
             }
         }
     }

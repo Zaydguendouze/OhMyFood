@@ -18,7 +18,7 @@ $tertiaire: #99E2D0;
     transition: .25s;
     box-shadow: 4px 4px 10px #00000045;
     border-radius: 80px;
-    background:linear-gradient(0deg, $primary, $secondary);
+    background:linear-gradient($primary, $secondary);
     font-weight: 400;
 }
 
@@ -259,7 +259,7 @@ header {
     
                                 &:hover {
                                     opacity: 1;
-                                    background: linear-gradient(0deg, $primary, $secondary);
+                                    background: linear-gradient($primary, $secondary);
                                     transition: all 1s;
                                     background-clip: text;
                                     -webkit-background-clip: text;

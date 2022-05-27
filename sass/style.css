@@ -102,7 +102,7 @@ header .logo {
   transition: 0.25s;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2705882353);
   border-radius: 80px;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   font-weight: 400;
 }
 .content .info .btn__explore:hover {
@@ -211,7 +211,7 @@ header .logo {
 }
 .content .restaurants .container .cards .card .card__info .card__heart .heart__color:hover {
   opacity: 1;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   transition: all 1s;
   background-clip: text;
   -webkit-background-clip: text;
