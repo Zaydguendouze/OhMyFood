@@ -684,7 +684,7 @@ a .arrow__return {
   .menu {
     width: 80%;
     margin: auto;
-    background: #fdfdfd;
+    background: #eee;
   }
   .menu__cards {
     display: -ms-grid;
