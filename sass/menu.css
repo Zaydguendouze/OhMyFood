@@ -110,7 +110,7 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #e7e7e7;
+  background-color: white;
   font-size: 1.2rem;
   padding: 1.2rem;
 }
@@ -684,7 +684,7 @@ a .arrow__return {
   .menu {
     width: 80%;
     margin: auto;
-    background: #e6e0e0;
+    background: #fdfdfd;
   }
   .menu__cards {
     display: -ms-grid;
