@@ -373,4 +373,326 @@ footer ul li a i {
             column-gap: 2rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+a .arrow__return {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 2rem;
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30%;
+}
+
+.background__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  margin-top: -3.5rem;
+  border-radius: 2rem 2rem 0 0;
+  background: #f6f6f6;
+  position: relative;
+}
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem 0 1rem;
+}
+
+.menu__header h2 {
+  font-family: "Shrikhand";
+  margin: 1rem 0;
+}
+
+.menu__header .card__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.menu__header .card__heart i {
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+.menu__header .card__heart .heart__color {
+  opacity: 0;
+}
+
+.menu__header .card__heart .heart__color:hover {
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.menu .menu__card {
+  padding: 0 1rem;
+}
+
+.menu .menu__card h3 {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.50rem;
+  font-weight: 400;
+  margin: 1.2rem 0;
+}
+
+.menu .menu__card h3:after {
+  content: "";
+  position: absolute;
+  background: #99e2d0;
+  height: 0.25rem;
+  width: 3.5rem;
+  left: 0;
+  bottom: 0;
+}
+
+.menu .menu__card .menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  border-radius: .75rem;
+  padding: 1rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 1rem #0000001a;
+          box-shadow: 0.25rem 0.25rem 1rem #0000001a;
+  overflow: hidden;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-animation: animate .5s;
+          animation: animate .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.menu .menu__card .menu__item:nth-child(1) {
+  -webkit-animation-delay: 0.33333s;
+          animation-delay: 0.33333s;
+}
+
+.menu .menu__card .menu__item:nth-child(2) {
+  -webkit-animation-delay: 0.66667s;
+          animation-delay: 0.66667s;
+}
+
+.menu .menu__card .menu__item:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.menu .menu__card .menu__item:nth-child(4) {
+  -webkit-animation-delay: 1.33333s;
+          animation-delay: 1.33333s;
+}
+
+.menu .menu__card .menu__item:nth-child(5) {
+  -webkit-animation-delay: 1.66667s;
+          animation-delay: 1.66667s;
+}
+
+.menu .menu__card .menu__item:nth-child(6) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.menu .menu__card .menu__item:nth-child(7) {
+  -webkit-animation-delay: 2.33333s;
+          animation-delay: 2.33333s;
+}
+
+.menu .menu__card .menu__item:nth-child(8) {
+  -webkit-animation-delay: 2.66667s;
+          animation-delay: 2.66667s;
+}
+
+.menu .menu__card .menu__item:nth-child(9) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.menu .menu__card .menu__item--text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+
+.menu .menu__card .menu__item--text h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu .menu__card .menu__item--text p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu .menu__card .menu__item--price {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: .5rem;
+}
+
+.menu .menu__card .menu__item--validation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.menu .menu__card .menu__item--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.menu .menu__card .menu__item--icon i {
+  color: #99e2d0;
+}
+
+.menu .menu__card .menu__item:hover .menu__item--validation {
+  margin-right: -1rem;
+}
+
+.menu .menu__card .menu__item:hover .menu__item--icon {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.menu .btn__cards {
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .btn__cards .btn__buy {
+  padding: 0.75rem 3.5rem;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .25s;
+  transition: .25s;
+  -webkit-box-shadow: 4px 4px 10px #00000045;
+          box-shadow: 4px 4px 10px #00000045;
+  border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  font-weight: 400;
+  font-weight: 400;
+}
+
+.menu .btn__cards .btn__buy:hover {
+  opacity: 1;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.50rem #000000c9;
+          box-shadow: 0.25rem 0.25rem 0.50rem #000000c9;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .background__image {
+    max-width: 100%;
+    max-height: 30rem;
+  }
+  .menu {
+    width: 80%;
+    margin: auto;
+    background: #e6e0e0;
+  }
+  .menu__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

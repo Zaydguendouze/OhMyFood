@@ -1,5 +1,8 @@
+// import du fichier style pour appliquer les élements déjà stylisés
 @import "style";
 
+// flêche de retour vers l'index
+// position absolute sachant que le header est en relative dans style.scss
 a {
     .arrow__return {
         display: flex;
@@ -9,24 +12,21 @@ a {
         width: 2rem;
         height: 2rem;
         color: #000;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         position: absolute;
         top: 30%;
     }
 }
 
 .background__image {
-    max-width: 100%;
-    max-height: 30rem;
     width: 100%;
     object-fit: cover;
 }
 
 .menu {
-    margin-top: -4rem;
+    margin-top: -3.5rem;
     border-radius: 2rem 2rem 0 0;
     background: #f6f6f6;
-    z-index: 1000;
     position: relative;
 
     &__header {
@@ -41,27 +41,22 @@ a {
         }
 
         .card__heart {
-            width: 2rem;
-            height: 2rem;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            position: relative;
 
             i {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 position: absolute;
 
-                &:hover {
-                    opacity: 0;
-                }
             }
 
+            // opacity 0 pour faire disparaître le heart
             .heart__color {
                 opacity: 0;
 
+                // opacity 1 pour faire l'effet désiré avec le hover
                 &:hover {
                     opacity: 1;
                     background: linear-gradient($primary, $secondary);
@@ -74,6 +69,122 @@ a {
         }
     }
 
+    .menu__card {
+        padding: 0 1rem;
+
+        h3 {
+            text-transform: uppercase;
+            position: relative;
+            padding-bottom: 0.50rem;
+            font-weight: 400;
+            margin: 1.2rem 0;
+
+            // petite barre en dessous des titres
+            &:after {
+                content: "";
+                position: absolute;
+                background: #99e2d0;
+                height: 0.25rem;
+                width: 3.5rem;
+                left: 0;
+                bottom: 0;
+            }
+        }
+
+        // animation des différents menus
+        .menu__item {
+            display: flex;
+            background: #fff;
+            border-radius: .75rem;
+            padding: 1rem;
+            box-shadow: 0.25rem 0.25rem 1rem #0000001a;
+            overflow: hidden;
+            margin: 1rem 0;
+            cursor: pointer;
+            // nom de l'animation
+            animation: animate .5s;
+            animation-fill-mode: both;
+        
+            // boucle pour afficher les menus en décalé
+            @for $n from 1 through 9 {
+                &:nth-child(#{$n}) {
+                    animation-delay: #{$n/3}s;
+                }
+            }
+
+            // hidden pour masquer les éléments qui vont s'empiler
+            // flex pour pousser tous les boutons validation de la même façon
+            &--text {
+                flex: 1;
+                overflow: hidden;
+
+                h4 {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                p {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            // disposition des prix
+            &--price {
+                font-weight: 700;
+                display: flex;
+                align-items: flex-end;
+                padding-left: .5rem;
+            }
+
+            // bouton validation décalé à -5rem
+            &--validation {
+                display: flex;
+                background: #99e2d0;
+                margin: -1rem -5rem -1rem 1rem;
+                width: 4rem;
+                justify-content: center;
+                align-items: center;
+                transition-duration: .5s;
+            }
+
+            // icône validation avec une rotation inversée
+            &--icon {
+                display: flex;
+                width: 1.5rem;
+                height: 1.5rem;
+                background: #fff;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                transform: rotate(-360deg);
+                transition-duration: .5s;
+
+                i {
+                    color: #99e2d0;
+                }
+            }
+
+            &:hover {
+                // décalage du bouton de validation vers la gauche de 1rem
+                .menu__item {
+                    &--validation {
+                        margin-right: -1rem;
+                    }
+
+                    // rotation de l'icône de validation
+                    &--icon {
+                        transform: rotate(0);
+                
+                    }    
+                }
+            }
+        }
+    }
+
+    // bouton Commander
     .btn__cards {
         padding: 3rem 0;
         display: flex;
@@ -84,9 +195,49 @@ a {
             font-weight: 400;
 
             &:hover {
-                opacity: 0.8;
-                box-shadow: 0.25rem 0.25rem 10px #000000c9;
+                opacity: 1;
+                box-shadow: 0.25rem 0.25rem 0.50rem #000000c9;
             }
         }
+    }
+}
+
+// animation des menus à la suite
+// en créant un aggrandissement à 100%
+@keyframes animate {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+    
+
+
+
+@media screen and (min-width: 768px) {
+
+    // ajustement de l'image en desktop  
+    .background__image {
+        max-width: 100%;
+        max-height: 30rem;
+    }
+
+    // réduction de la taille de la carte
+    // recentrage et background différent
+    .menu {
+        width: 80%;
+        margin: auto;
+        background: #e6e0e0;
+    }
+
+    // disposition en grille sur 3 colonnes
+    .menu__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
     }
 }
