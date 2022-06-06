@@ -102,7 +102,7 @@ a {
             margin: 1rem 0;
             cursor: pointer;
             // nom de l'animation
-            animation: animate .5s;
+            animation: animate 1.5s;
             animation-fill-mode: both;
             animation-delay: calc(attr(menu__item) * 150ms);
         
