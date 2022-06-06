@@ -104,7 +104,12 @@ a {
             // nom de l'animation et calcul 
             animation: animate .5s;
             animation-fill-mode: both;
-            animation-delay: calc(attr(menu__item) * 150);
+            // animation-delay: calc(attr(menu__item) * 15s);
+            @for $n from 1 through 9 {
+                &:nth-child(#{$n}) {
+                    animation-delay: #{$n/3}s;
+                }
+            }
         
             
             // hidden pour masquer les éléments qui vont s'empiler
