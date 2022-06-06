@@ -491,12 +491,12 @@ a .arrow__return {
   overflow: hidden;
   margin: 1rem 0;
   cursor: pointer;
-  -webkit-animation: animate 1.5s;
-          animation: animate 1.5s;
+  -webkit-animation: animate 1s;
+          animation: animate 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  -webkit-animation-delay: calc(attr(menu__item) * 150ms);
-          animation-delay: calc(attr(menu__item) * 150ms);
+  -webkit-animation-delay: calc(var(menu__item) * 150ms);
+          animation-delay: calc(var(menu__item) * 150ms);
 }
 
 .menu .menu__card .menu__item--text {
@@ -614,8 +614,8 @@ a .arrow__return {
 @-webkit-keyframes animate {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-1.3rem);
-            transform: translateY(-1.3rem);
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
   }
   100% {
     opacity: 1;
@@ -627,8 +627,8 @@ a .arrow__return {
 @keyframes animate {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-1.3rem);
-            transform: translateY(-1.3rem);
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
   }
   100% {
     opacity: 1;
@@ -650,8 +650,8 @@ a .arrow__return {
   .menu__cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
   }

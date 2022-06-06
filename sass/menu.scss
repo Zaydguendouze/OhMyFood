@@ -102,9 +102,9 @@ a {
             margin: 1rem 0;
             cursor: pointer;
             // nom de l'animation
-            animation: animate 1.5s;
+            animation: animate 1s;
             animation-fill-mode: both;
-            animation-delay: calc(attr(menu__item) * 150ms);
+            animation-delay: calc(var(menu__item) * 150ms);
         
             
             // hidden pour masquer les éléments qui vont s'empiler
@@ -202,7 +202,7 @@ a {
 @keyframes animate {
     0% {
         opacity: 0;
-        transform: translateY(-1.3rem);
+        transform: translateY(-1.5rem);
     }
 
     100% {
@@ -234,7 +234,7 @@ a {
     // disposition en grille sur 3 colonnes
     .menu__cards {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 2rem;
     }
 }
