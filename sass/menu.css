@@ -499,42 +499,52 @@ a .arrow__return {
 
 .menu .menu__card .menu__item:nth-child(1) {
   -webkit-animation-delay: 0.33333s;
+          animation-delay: 0.33333s;
 }
 
 .menu .menu__card .menu__item:nth-child(2) {
   -webkit-animation-delay: 0.66667s;
+          animation-delay: 0.66667s;
 }
 
 .menu .menu__card .menu__item:nth-child(3) {
   -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .menu .menu__card .menu__item:nth-child(4) {
   -webkit-animation-delay: 1.33333s;
+          animation-delay: 1.33333s;
 }
 
 .menu .menu__card .menu__item:nth-child(5) {
   -webkit-animation-delay: 1.66667s;
+          animation-delay: 1.66667s;
 }
 
 .menu .menu__card .menu__item:nth-child(6) {
   -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .menu .menu__card .menu__item:nth-child(7) {
   -webkit-animation-delay: 2.33333s;
+          animation-delay: 2.33333s;
 }
 
 .menu .menu__card .menu__item:nth-child(8) {
   -webkit-animation-delay: 2.66667s;
+          animation-delay: 2.66667s;
 }
 
 .menu .menu__card .menu__item:nth-child(9) {
   -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .menu .menu__card .menu__item:nth-child(10) {
   -webkit-animation-delay: 3.33333s;
+          animation-delay: 3.33333s;
 }
 
 .menu .menu__card .menu__item--text {
