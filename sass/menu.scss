@@ -105,7 +105,7 @@ a {
             animation: animate .5s;
             animation-fill-mode: both;
             // animation-delay: calc(attr(menu__item) * 15s);
-            @for $n from 1 through 9 {
+            @for $n from 1 through 10 {
                 &:nth-child(#{$n}) {
                     animation-delay: #{$n/3}s;
                 }

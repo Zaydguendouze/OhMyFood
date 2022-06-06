@@ -542,6 +542,11 @@ a .arrow__return {
           animation-delay: 3s;
 }
 
+.menu .menu__card .menu__item:nth-child(10) {
+  -webkit-animation-delay: 3.33333s;
+          animation-delay: 3.33333s;
+}
+
 .menu .menu__card .menu__item--text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
