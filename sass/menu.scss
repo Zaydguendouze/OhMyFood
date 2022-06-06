@@ -102,15 +102,10 @@ a {
             margin: 1rem 0;
             cursor: pointer;
             // nom de l'animation et calcul 
-            animation: animate .5s;
+            animation: animate .7s;
             animation-fill-mode: both;
-            // animation-delay: calc(attr(menu__item) * 15s);
-            @for $n from 1 through 10 {
-                &:nth-child(#{$n}) {
-                    animation-delay: #{$n/3}s;
-                }
-            }
-        
+            animation-delay: calc(var(--animation-order) * 150ms);
+                  
             
             // hidden pour masquer les éléments qui vont s'empiler
             // flex pour pousser tous les boutons validation de la même façon
