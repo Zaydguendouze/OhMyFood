@@ -101,10 +101,10 @@ a {
             overflow: hidden;
             margin: 1rem 0;
             cursor: pointer;
-            // nom de l'animation
+            // nom de l'animation et calcul 
             animation: animate .5s;
             animation-fill-mode: both;
-            animation-delay: calc(attr(menu__item) * 150ms);
+            animation-delay: calc(attr(menu__item) * 150);
         
             
             // hidden pour masquer les éléments qui vont s'empiler
