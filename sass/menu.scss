@@ -104,14 +104,9 @@ a {
             // nom de l'animation
             animation: animate .5s;
             animation-fill-mode: both;
+            animation-delay: calc(attr(menu__item) * 150ms);
         
-            // boucle pour afficher les menus en décalé
-            @for $n from 1 through 9 {
-                &:nth-child(#{$n}) {
-                    animation-delay: #{$n/3}s;
-                }
-            }
-
+            
             // hidden pour masquer les éléments qui vont s'empiler
             // flex pour pousser tous les boutons validation de la même façon
             &--text {
@@ -206,11 +201,13 @@ a {
 // en créant un aggrandissement à 100%
 @keyframes animate {
     0% {
-        transform: scale(0);
+        opacity: 0;
+        transform: translateY(-1.3rem);
     }
 
     100% {
-        transform: scale(1);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

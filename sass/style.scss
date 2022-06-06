@@ -348,7 +348,7 @@ footer {
             // grid et placement en deux colonnes identiques
             .cards {
                 display: grid !important;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: 1fr 1fr;
                 column-gap: 2rem;
             }
         }
