@@ -57,15 +57,15 @@ body {
 
 @-webkit-keyframes LogoAnimate {
   0% {
-    -webkit-transform: translateY(0) rotate(360deg);
-            transform: translateY(0) rotate(360deg);
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
   }
 }
 
 @keyframes LogoAnimate {
   0% {
-    -webkit-transform: translateY(0) rotate(360deg);
-            transform: translateY(0) rotate(360deg);
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
   }
 }
 

@@ -76,12 +76,12 @@ body {
 // @keyframes LogoAnimate pour faire tourner les lettres
 @keyframes LogoAnimate {
     0% {
-        transform: translateY(0) rotate(360deg);
+        transform: rotate(-1turn);
     }
 }
 
 // @keyframes loader avec une opacité 0 pour apparaître sans
-// le reste de la page
+// le reste de la page et z_index pour retirer sa priorité
 @keyframes loader {
     100% {
         opacity: 0;
