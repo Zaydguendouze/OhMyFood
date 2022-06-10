@@ -1,3 +1,8 @@
+// ajout de variables pour les différentes couleurs
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiaire: #99E2D0;
+
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +10,6 @@
     font-family: 'Roboto';
     text-decoration: none;
 }
-
-// ajout de variables pour les différentes couleurs
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiaire: #99E2D0;
 
 // @mixin pour les différents btn du projet
 @mixin btn {
@@ -48,7 +48,7 @@ body {
     color: $tertiaire;
 }
 
-// loader de 3s avec fin d'animation "both"
+// loader de 1.5s avec fin d'animation "forwards"
 // opacity de la page avant de voir l'accueil
 .loader {
     display: flex;
@@ -59,16 +59,17 @@ body {
     z-index: 100;
     justify-content: center;
     align-items: center;
-    animation: loader;
-    animation-delay: 3s;
-    animation-fill-mode: both;
+    animation: loader 1.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
 
     // animation des lettres
     .loader {
         &__logo {
             font-family: 'Shrikhand';
             font-size: 3rem;
-            animation: LogoAnimate 2s;
+            animation: LogoAnimate 3s;
+            animation-fill-mode: forwards;
         }
     }
 }
@@ -76,14 +77,30 @@ body {
 // @keyframes LogoAnimate pour faire tourner les lettres
 @keyframes LogoAnimate {
     0% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0;
         transform: rotate(-1turn);
     }
 }
 
 // @keyframes loader avec une opacité 0 pour apparaître sans
-// le reste de la page et z_index pour retirer sa priorité
+// le reste de la page et z-index pour retirer sa priorité
 @keyframes loader {
-    100% {
+
+    from {
+        opacity: 1;
+        z-index: 100;
+    }
+
+    to {
         opacity: 0;
         z-index: -100;
     }
