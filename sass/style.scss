@@ -271,6 +271,11 @@ header {
                             margin: 0 0 .50rem;
                         }
 
+                        a {
+                            text-decoration: none;
+                            color: #000;
+                        }
+
                         .card__heart {
                             display: flex;
                             justify-content: center;

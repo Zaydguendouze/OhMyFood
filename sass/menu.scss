@@ -210,8 +210,6 @@ a {
     }
 }
 
-    
-
 
 
 @media screen and (min-width: 768px) {
@@ -228,12 +226,5 @@ a {
         width: 80%;
         margin: auto;
         background: #eee;
-    }
-
-    // disposition en grille sur 3 colonnes
-    .menu__cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 2rem;
     }
 }

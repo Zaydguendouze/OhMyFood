@@ -304,6 +304,11 @@ header .logo {
   margin: 0 0 .50rem;
 }
 
+.content .restaurants .container .cards .card .card__info a {
+  text-decoration: none;
+  color: #000;
+}
+
 .content .restaurants .container .cards .card .card__info .card__heart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,14 +677,6 @@ a .arrow__return {
     width: 80%;
     margin: auto;
     background: #eee;
-  }
-  .menu__cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
   }
 }
 /*# sourceMappingURL=menu.css.map */
