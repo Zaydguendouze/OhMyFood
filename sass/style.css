@@ -298,15 +298,11 @@ header .logo {
   margin: 0 1rem;
   color: black;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .content .restaurants .container .cards .card .card__info h3 {
   margin: 0 0 .50rem;
-}
-
-.content .restaurants .container .cards .card .card__info a {
-  text-decoration: none;
-  color: #000;
 }
 
 .content .restaurants .container .cards .card .card__info .card__heart {
